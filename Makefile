@@ -2,8 +2,8 @@
 TARGET = aofb
 SRCS = aofb.c
 
-ARCH := arm
-CROSS_COMPILE := arm-xilinx-linux-gnueabi-
+ARCH ?= 
+CROSS_COMPILE ?= #arm-xilinx-linux-gnueabi-
 
 CC = $(CROSS_COMPILE)gcc
 CFLAGS = -O3 -g
